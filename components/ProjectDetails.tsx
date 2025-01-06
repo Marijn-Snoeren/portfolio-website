@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Link from 'next/link';
 
 interface ProjectDetailsProps {
   id: string;
@@ -37,7 +38,7 @@ export default function ProjectDetails({
         setIsAtBottom(true);
         setTimeout(() => {
           router.push(`/?project=${number}`);
-        }, 500);
+        }, 400);
       }
     };
 
@@ -52,22 +53,28 @@ export default function ProjectDetails({
     const opacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 1, 1, 0]);
 
     return (
-      <div className="sticky top-0 p-4 w-full h-screen flex flex-col justify-end">
-        <div>
-          <div className="text-2xl font-bold flex justify-between items-center">
-            <h1>{title}</h1>
-            <div className="flex items-center gap-4">
-              <p>{number}</p>
-            </div>
-          </div>
-        </div>
-        <motion.div 
-          className="absolute inset-0 flex items-center justify-center px-16"
-          style={{ opacity }}
-        >
-          <p className="text-xs max-w-md">{description}</p>
-        </motion.div>
+<div className="sticky top-0 p-4 w-full h-screen flex flex-col justify-end">
+<div className="absolute top-10 inset-x-0 flex items-center justify-center p-4">
+  <p className='text-xs font-thin'>scroll down</p>
+</div>
+  <div>
+    <div className="text-2xl font-bold flex justify-between items-center">
+      <h1>{title}</h1>
+      <div className="flex items-center gap-4">
+        <p>{number}</p>
       </div>
+    </div>
+  </div>
+<motion.div 
+  className="absolute inset-0 flex flex-col items-center justify-center px-16 space-y-2"
+  style={{ opacity }}
+>
+  <p className="text-xs max-w-md">{description}</p>
+  <Link href="https://marketingloom.vercel.app/" className="pt-8 text-xs font-thin">
+    visit website →
+  </Link>
+</motion.div>
+</div>
     );
   };
 

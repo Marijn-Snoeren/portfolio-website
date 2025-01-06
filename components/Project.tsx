@@ -23,7 +23,7 @@ export default function Project({ id, title, number, imageSrc, imageOnLeft }: Pr
     setIsAnimating(true);
     setTimeout(() => {
       router.push(`/project/${id}`);
-    }, 500);
+    }, 400);
   };
 
   useEffect(() => {
@@ -58,7 +58,7 @@ export default function Project({ id, title, number, imageSrc, imageOnLeft }: Pr
           {isImageLoaded && !imageError && (
             <motion.div
               transition={{ duration: 0.5 }}
-              className="absolute top-0 left-0 w-full h-full"
+              className="absolute top-0 left-0 w-full h-full hover:opacity-50"
             >
               <Image
                 src={imageSrc}
