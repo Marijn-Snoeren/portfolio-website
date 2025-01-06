@@ -24,11 +24,11 @@ const projects = [
     title: "UPENDO",
     number: 2,
     description: "Duis dolore dolor non qui eiusmod irure proident quis mollit Lorem ad incididunt deserunt nostrud. Enim sit minim anim. Non ullamco ipsum mollit.",
-    imageSrc: "https://images.unsplash.com/photo-1735598417949-d22e9f8092ea?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8",
+    imageSrc: "/upendo-1.png",
     additionalImages: [
       "/placeholder.svg?height=800&width=600",
       "/placeholder.svg?height=800&width=600",
-      "https://images.unsplash.com/photo-1735598417949-d22e9f8092ea?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8",
+      "/upendo-1.png",
     ],
     imageOnLeft: false
   },
