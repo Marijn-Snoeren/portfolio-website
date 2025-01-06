@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { useSearchParams } from 'next/navigation';
 import ProjectList from '../components/ProjectList';
 
 const projects = [
@@ -15,7 +16,7 @@ const projects = [
     id: "project-two",
     title: "UPENDO",
     number: 2,
-    imageSrc: "https://images.unsplash.com/photo-1735598417949-d22e9f8092ea?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8",
+    imageSrc: "https://images.unsplash.com/photo-1735598417949-d22e9f8092ea?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8fA==",
     imageOnLeft: false
   },
   {
@@ -43,12 +44,20 @@ const projects = [
 
 export default function Home() {
   const projectListRef = useRef<HTMLDivElement>(null);
+  const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (projectListRef.current) {
-      projectListRef.current.scrollTop = 0; // Scroll to the top initially
+    const projectParam = searchParams.get('project');
+    if (projectParam && projectListRef.current) {
+      const projectIndex = projects.findIndex(p => p.number === parseInt(projectParam, 10));
+      if (projectIndex !== -1) {
+        const scrollPosition = projectIndex * window.innerHeight;
+        projectListRef.current.scrollTop = scrollPosition; // Instant scroll without animation
+      }
+    } else if (projectListRef.current) {
+      projectListRef.current.scrollTop = 0; // Scroll to the top if no project specified
     }
-  }, []);
+  }, [searchParams]);
 
   return (
     <main className="h-screen overflow-hidden">

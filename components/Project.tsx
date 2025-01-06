@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/navigation';
-import { useParallax } from '../hooks/useParallax';
 
 interface ProjectProps {
   id: string;
@@ -19,7 +18,6 @@ export default function Project({ id, title, number, imageSrc, imageOnLeft }: Pr
   const [isAnimating, setIsAnimating] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const router = useRouter();
-  const { ref, offset } = useParallax(0.3);
 
   const handleClick = () => {
     setIsAnimating(true);
@@ -47,25 +45,20 @@ export default function Project({ id, title, number, imageSrc, imageOnLeft }: Pr
   );
 
   const ImageContent = () => (
-    <motion.div 
-      className="relative flex flex-col items-center justify-center w-full h-full overflow-hidden"
+    <motion.div
+      className="relative flex flex-col items-center justify-center w-full h-screen overflow-hidden"
       animate={isAnimating ? { scale: 0.8 } : { scale: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div 
-        ref={ref}
-        className="photo-card relative cursor-pointer w-full h-full flex items-center justify-center overflow-hidden"
+      <div
+        className="photo-card relative cursor-pointer w-full h-screen flex items-center justify-center overflow-hidden"
         onClick={handleClick}
       >
         <AnimatePresence>
           {isImageLoaded && !imageError && (
-            <motion.div 
+            <motion.div
               transition={{ duration: 0.5 }}
-              className="w-full h-full"
-              style={{ 
-                transform: `translateY(${ -122 + offset }px)`,
-                transition: 'transform 0.1s ease-out'
-              }}
+              className="absolute top-0 left-0 w-full h-full"
             >
               <Image
                 src={imageSrc}
@@ -74,7 +67,7 @@ export default function Project({ id, title, number, imageSrc, imageOnLeft }: Pr
                 onError={() => setImageError(true)}
                 priority
                 loading="eager"
-                layout="fill" // Ensure the image fills the parent container
+                layout="fill" // Zorgt ervoor dat de afbeelding de container vult
               />
             </motion.div>
           )}
