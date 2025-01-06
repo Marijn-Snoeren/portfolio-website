@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
-import Image from 'next/image';
+// import Image from 'next/image'; // Removed unused import
 import ProjectList from '../components/ProjectList';
 
 const projects = [
