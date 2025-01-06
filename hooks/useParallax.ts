@@ -18,7 +18,8 @@ export function useParallax(speed: number = 0.2) {
       const windowHeight = scrollContainer.clientHeight
 
       const scrollPercent = (scrollTop - offsetTop + windowHeight) / (windowHeight + rect.height)
-      setOffset(scrollPercent * speed * rect.height)
+      const maxOffset = rect.height * -0.96 // Allow image to move up to 50% of its height
+      setOffset(-maxOffset * scrollPercent * speed)
     }
 
     const scrollContainer = ref.current?.closest('.snap-mandatory')
@@ -36,4 +37,3 @@ export function useParallax(speed: number = 0.2) {
 
   return { ref, offset }
 }
-
