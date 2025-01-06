@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import ProjectList from '../components/ProjectList';
 
@@ -46,9 +46,10 @@ export default function Home() {
   }, [searchParams]);
 
   return (
-    <main className="h-screen overflow-hidden">
-      <ProjectList projects={projects} ref={projectListRef} />
-    </main>
+    <Suspense fallback={<div>Loading...</div>}>
+      <main className="h-screen overflow-hidden">
+        <ProjectList projects={projects} ref={projectListRef} />
+      </main>
+    </Suspense>
   );
 }
-
