@@ -1,7 +1,6 @@
 'use client';
 
-import { useEffect, useRef, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useEffect, useRef } from 'react';
 import ProjectList from '../components/ProjectList';
 
 const projects = [
@@ -30,26 +29,23 @@ const projects = [
 
 export default function Home() {
   const projectListRef = useRef<HTMLDivElement>(null);
-  const searchParams = useSearchParams();
 
   useEffect(() => {
-    const projectParam = searchParams.get('project');
-    if (projectParam && projectListRef.current) {
-      const projectIndex = projects.findIndex(p => p.number === parseInt(projectParam, 10));
-      if (projectIndex !== -1) {
+    const projectHash = window.location.hash.replace('#', '');
+    if (projectHash) {
+      const projectIndex = projects.findIndex(p => p.number === parseInt(projectHash, 10));
+      if (projectIndex !== -1 && projectListRef.current) {
         const scrollPosition = projectIndex * window.innerHeight;
         projectListRef.current.scrollTop = scrollPosition; // Instant scroll without animation
       }
     } else if (projectListRef.current) {
       projectListRef.current.scrollTop = 0; // Scroll to the top if no project specified
     }
-  }, [searchParams]);
+  }, []);
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <main className="h-screen overflow-hidden">
-        <ProjectList projects={projects} ref={projectListRef} />
-      </main>
-    </Suspense>
+    <main className="h-screen overflow-hidden">
+      <ProjectList projects={projects} ref={projectListRef} />
+    </main>
   );
 }
