@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { useSearchParams } from 'next/navigation';
+import Image from 'next/image';
 import ProjectList from '../components/ProjectList';
 
 const projects = [
@@ -22,26 +24,27 @@ const projects = [
     id: "project-three",
     title: "LEVENSGLOED",
     number: 3,
-    imageSrc: "https://images.unsplash.com/photo-1735831435060-845f03ad57c2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D",
+    imageSrc: "/levensgloed.jpg", // Assuming you've downloaded this image
     imageOnLeft: true
   }
 ];
 
 export default function Home() {
   const projectListRef = useRef<HTMLDivElement>(null);
+  const searchParams = useSearchParams();
 
   useEffect(() => {
-    const projectHash = window.location.hash.replace('#', '');
-    if (projectHash) {
-      const projectIndex = projects.findIndex(p => p.number === parseInt(projectHash, 10));
-      if (projectIndex !== -1 && projectListRef.current) {
+    const projectParam = searchParams.get('project');
+    if (projectParam && projectListRef.current) {
+      const projectIndex = projects.findIndex(p => p.number === parseInt(projectParam, 10));
+      if (projectIndex !== -1) {
         const scrollPosition = projectIndex * window.innerHeight;
         projectListRef.current.scrollTop = scrollPosition; // Instant scroll without animation
       }
     } else if (projectListRef.current) {
       projectListRef.current.scrollTop = 0; // Scroll to the top if no project specified
     }
-  }, []);
+  }, [searchParams]);
 
   return (
     <main className="h-screen overflow-hidden">
@@ -49,3 +52,4 @@ export default function Home() {
     </main>
   );
 }
+
