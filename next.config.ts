@@ -7,8 +7,7 @@ const nextConfig = {
     minimumCacheTTL: 60,
   },
   experimental: {
-    optimizeCss: true,
-    optimizeImages: true,
+    optimizeCss: true, // Keep this as it's valid
   },
 }
 
