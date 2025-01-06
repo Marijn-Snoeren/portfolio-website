@@ -1,9 +1,5 @@
-'use client';
-
-import { useEffect, useRef } from 'react';
-import { useSearchParams } from 'next/navigation';
-// import Image from 'next/image'; // Removed unused import
-import ProjectList from '../components/ProjectList';
+import { Suspense } from 'react';
+import ProjectListWrapper from '../components/project-list-wrapper';
 
 const projects = [
   {
@@ -24,31 +20,17 @@ const projects = [
     id: "project-three",
     title: "LEVENSGLOED",
     number: 3,
-    imageSrc: "/levensgloed.jpg", // Assuming you've downloaded this image
+    imageSrc: "/levensgloed.jpg",
     imageOnLeft: true
   }
 ];
 
-export default function Home() {
-  const projectListRef = useRef<HTMLDivElement>(null);
-  const searchParams = useSearchParams();
-
-  useEffect(() => {
-    const projectParam = searchParams.get('project');
-    if (projectParam && projectListRef.current) {
-      const projectIndex = projects.findIndex(p => p.number === parseInt(projectParam, 10));
-      if (projectIndex !== -1) {
-        const scrollPosition = projectIndex * window.innerHeight;
-        projectListRef.current.scrollTop = scrollPosition; // Instant scroll without animation
-      }
-    } else if (projectListRef.current) {
-      projectListRef.current.scrollTop = 0; // Scroll to the top if no project specified
-    }
-  }, [searchParams]);
-
+export default function Page() {
   return (
     <main className="h-screen overflow-hidden">
-      <ProjectList projects={projects} ref={projectListRef} />
+      <Suspense fallback={<div>Loading...</div>}>
+        <ProjectListWrapper projects={projects} />
+      </Suspense>
     </main>
   );
 }
