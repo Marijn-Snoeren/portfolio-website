@@ -1,76 +1,145 @@
-# Project Name: Portfolio Website
+# Showcase Portfolio
 
 ## Overview
 This project is a showcase portfolio website built with **React**, **Next.js**, **Tailwind CSS**, and **Motion**. It includes features such as a parallax effect, scroll-based animations, and dynamic project details pages. The purpose of this project is to create a visually appealing and functional website to present my work and skills effectively.
 
 ---
 
-## Commit History
+## Commit History First Git
+    https://github.com/Marijn-Snoeren/showcase-portfolio
 
-### Commit: `initial-setup`
-- **Description**: Set up the project with Next.js, Tailwind CSS, and Motion. Created the initial folder structure and installed necessary dependencies.
-- **Files Modified**:
-  - `package.json`: Added dependencies.
-  - `tailwind.config.js`: Set up the Tailwind configuration.
-  - `pages/_app.js`: Included global styles.
-- **Reason**: To establish the foundation for the project and ensure all tools are properly configured.
+### Commit: `Initial commit from Create Next App`
+- **Description**: Initialized the project with the default setup from Create Next App.
+- **Reason**: To establish the foundation for the project and begin development.
 
 ---
 
-### Commit: `create-homepage-layout`
-- **Description**: Designed the homepage layout with responsive sections for the hero, about, and project previews.
-- **Files Modified**:
-  - `pages/index.js`: Added the main structure of the homepage.
-  - `components/Hero.js`: Created the hero section component.
-  - `components/About.js`: Created the about section component.
-- **Reason**: To provide a base for the homepage and start implementing the design.
+### Commit: `gsap-test`
+- **Description**: Tested GSAP animations for potential use in interactive elements.
+- **Reason**: To evaluate GSAP's capabilities for adding smooth animations and transitions.
 
 ---
 
-### Commit: `add-parallax-effect`
-- **Description**: Implemented a parallax scrolling effect for the hero section image.
-- **Files Modified**:
-  - `components/Hero.js`: Added the parallax logic using Motion.
-  - `styles/globals.css`: Adjusted styles for smooth scrolling.
-- **Reason**: To enhance the visual appeal of the homepage.
+### Commit: `nieuwe layout`
+- **Description**: Introduced a new layout for the website, including redesigned sections and improved responsiveness.
+- **Reason**: To align the design with modern trends and ensure a better user experience.
 
 ---
 
-### Commit: `setup-project-details-page`
-- **Description**: Created a dynamic project details page to showcase individual projects with animations.
-- **Files Modified**:
-  - `pages/projects/[id].js`: Added logic to fetch and display project data dynamically.
-  - `components/ProjectDetails.js`: Built the project details component.
-  - `styles/ProjectDetails.module.css`: Added styles for the project details page.
-- **Reason**: To allow users to view detailed information about each project.
+### Commit: `description`
+- **Description**: Added detailed descriptions for project sections and components.
+- **Reason**: To provide context and clarity about the purpose and functionality of each section.
 
 ---
 
-### Commit: `add-scroll-navigation-animation`
-- **Description**: Added a scroll-based animation that triggers navigation when reaching the bottom of the project details page.
-- **Files Modified**:
-  - `components/ProjectDetails.js`: Integrated the scroll-based navigation trigger.
-  - `styles/animations.css`: Added styles for the scroll animations.
-- **Reason**: To improve user experience and add interactive elements.
+### Commit: `parallax + shrink`
+- **Description**: Added a shrink effect to the parallax scrolling feature for a dynamic user experience.
+- **Reason**: To enhance the visual appeal and interactivity of the website.
 
 ---
 
-### Commit: `fix-bug-navigation-trigger`
-- **Description**: Fixed an issue where the scroll-based navigation was triggering prematurely.
-- **Files Modified**:
-  - `components/ProjectDetails.js`: Adjusted the scroll threshold logic.
-  - `utils/helpers.js`: Added a utility function to debounce the scroll event.
-- **Reason**: To ensure the navigation trigger works as intended and enhances the user experience.
+### Commit: `nieuwe versie`
+- **Description**: Updated the project with a new version, including design and functionality improvements.
+- **Reason**: To implement changes based on feedback and align with the updated project requirements.
 
 ---
 
-### Commit: `finalize-design`
-- **Description**: Polished the overall design, improved responsiveness, and added final touches to the animations.
-- **Files Modified**:
-  - `components/Header.js`: Updated the navigation bar design.
-  - `components/Footer.js`: Improved footer layout and added links.
-  - `styles/globals.css`: Updated global styles for consistency.
-- **Reason**: To ensure the website looks professional and works seamlessly on all devices.
+### Commit: `parllax fix`
+- **Description**: Fixed issues with the parallax effect, ensuring smooth scrolling and proper alignment.
+- **Reason**: To resolve a bug causing visual glitches in the parallax scrolling feature.
+
+---
+
+### Commit: `projects hidden`
+- **Description**: Temporarily hid the projects section for further refinement and testing.
+- **Reason**: To focus on improving the layout and ensuring a polished presentation before displaying it to users.
+
+---
+
+### Commit: `header`
+- **Description**: Created the header component with navigation links and styling.
+- **Reason**: To establish a consistent navigation structure across the website.
+
+---
+
+### Commit: `auto scroll back`
+- **Description**: Implemented an auto-scroll-back feature to enhance navigation experience.
+- **Reason**: To improve usability by automatically scrolling users back to the top or a specific section.
+
+---
+
+## Commit History Current Git
+    https://github.com/Marijn-Snoeren/portfolio-website
+
+### Commit: `Add files via upload`
+- **Description**: Started the project by creating the initial file structure using `vo dev`.
+- **Reason**: To lay the groundwork for the project and prepare for development.
+
+---
+
+### Commit: `ignore`
+- **Description**: Added a `.gitignore` file to exclude unnecessary files and folders from version control.
+- **Reason**: To keep the repository clean and avoid tracking temporary or sensitive files.
+
+---
+
+### Commit: `config fix`
+- **Description**: Fixed configuration issues to ensure proper project setup and functionality.
+- **Reason**: To address errors and streamline the development process.
+
+---
+
+### Commit: `image height`
+- **Description**: Adjusted the height of images to improve layout consistency and visual appeal.
+- **Reason**: To ensure images display correctly across different screen sizes.
+
+---
+
+### Commit: `image fix and redirect`
+- **Description**: Fixed image-related issues and implemented a redirect for smoother navigation.
+- **Reason**: To enhance user experience by resolving visual bugs and improving navigation flow.
+
+---
+
+### Commit: `images`
+- **Description**: Added images to the project for use in various components and sections.
+- **Reason**: To include necessary visual assets for the website.
+
+---
+
+### Commit: `new home`
+- **Description**: Created a new homepage layout with updated components and styling.
+- **Reason**: To redesign the homepage for a more modern and user-friendly experience.
+
+---
+
+### Commit: `home fix`
+- **Description**: Fixed issues with the new homepage layout, including responsiveness and alignment.
+- **Reason**: To ensure the homepage works seamlessly across devices.
+
+---
+
+### Commit: `direct fix`
+- **Description**: Made quick fixes to address immediate bugs in the project.
+- **Reason**: To resolve critical issues without delay.
+
+---
+
+### Commit: `nieuwe fix`
+- **Description**: Applied additional fixes to improve functionality and design consistency.
+- **Reason**: To refine the project based on recent testing and feedback.
+
+---
+
+### Commit: `projectlist`
+- **Description**: Created a project list component to display projects dynamically.
+- **Reason**: To showcase all projects in a structured and visually appealing way.
+
+---
+
+### Commit: `description`
+- **Description**: Added descriptions to various sections of the project for better context and clarity.
+- **Reason**: To improve the readability and usability of the website.
 
 ---
 
