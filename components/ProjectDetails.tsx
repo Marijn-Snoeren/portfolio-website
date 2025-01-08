@@ -13,7 +13,6 @@ interface ProjectDetailsProps {
   description: string;
   imageSrc: string;
   additionalImages: string[];
-  imageOnLeft: boolean;
 }
 
 export default function ProjectDetails({ 
@@ -22,7 +21,6 @@ export default function ProjectDetails({
   description, 
   imageSrc, 
   additionalImages,
-  imageOnLeft
 }: ProjectDetailsProps) {
   const [imageError, setImageError] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(false);

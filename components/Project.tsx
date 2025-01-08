@@ -13,7 +13,7 @@ interface ProjectProps {
   imageOnLeft: boolean;
 }
 
-export default function Project({ id, title, number, imageSrc, imageOnLeft }: ProjectProps) {
+export default function Project({ id, title, number, imageSrc}: ProjectProps) {
   const [imageError, setImageError] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
