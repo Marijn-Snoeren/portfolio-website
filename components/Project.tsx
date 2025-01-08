@@ -10,7 +10,6 @@ interface ProjectProps {
   title: string;
   number: number;
   imageSrc: string;
-  imageOnLeft: boolean;
 }
 
 export default function Project({ id, title, number, imageSrc}: ProjectProps) {

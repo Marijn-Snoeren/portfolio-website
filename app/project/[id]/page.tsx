@@ -17,7 +17,6 @@ const projects = [
       "/loom-4.png",
       "/loom-5.png",
     ],
-    imageOnLeft: true
   },
   {
     id: "project-two",
@@ -32,7 +31,6 @@ const projects = [
       "/upendo-6.png",
       "/upendo-1.png"
     ],
-    imageOnLeft: false
   },
   {
     id: "project-three",
@@ -45,7 +43,6 @@ const projects = [
       "/placeholder.svg?height=800&width=600",
       "/placeholder.svg?height=800&width=600",
     ],
-    imageOnLeft: true
   }
 ];
 

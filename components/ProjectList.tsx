@@ -6,7 +6,6 @@ interface ProjectData {
   title: string;
   number: number;
   imageSrc: string;
-  imageOnLeft: boolean;
 }
 
 interface ProjectListProps {
@@ -32,7 +31,6 @@ const ProjectList = forwardRef<HTMLDivElement, ProjectListProps>(({ projects }, 
             title={project.title}
             number={project.number}
             imageSrc={project.imageSrc}
-            imageOnLeft={project.imageOnLeft}
           />
         ))}
       </div>

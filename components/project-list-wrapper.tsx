@@ -9,7 +9,6 @@ interface ProjectData {
   title: string;
   number: number;
   imageSrc: string;
-  imageOnLeft: boolean;
 }
 
 interface ProjectListWrapperProps {

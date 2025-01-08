@@ -7,21 +7,18 @@ const projects = [
     title: "LOOM",
     number: 1,
     imageSrc: "/loom-5.png",
-    imageOnLeft: true
   },
   {
     id: "project-two",
     title: "UPENDO",
     number: 2,
     imageSrc: "/upendo-1.png",
-    imageOnLeft: false
   },
   {
     id: "project-three",
     title: "LEVENSGLOED",
     number: 3,
     imageSrc: "/levensgloed.jpg",
-    imageOnLeft: true
   }
 ];
 
