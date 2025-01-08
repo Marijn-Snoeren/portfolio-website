@@ -46,12 +46,12 @@ export default function Project({ id, title, number, imageSrc, imageOnLeft }: Pr
 
   const ImageContent = () => (
     <motion.div
-      className="relative flex flex-col items-center justify-center w-full h-screen overflow-hidden"
+      className="relative flex flex-col items-center justify-center w-full h-[50vh] md:h-screen overflow-hidden"
       animate={isAnimating ? { scale: 0.8 } : { scale: 1 }}
       transition={{ duration: 0.5 }}
     >
       <div
-        className="photo-card relative cursor-pointer w-full h-screen flex items-center justify-center overflow-hidden"
+        className="photo-card relative cursor-pointer w-full h-full flex items-center justify-center overflow-hidden"
         onClick={handleClick}
       >
         <AnimatePresence>
@@ -67,7 +67,7 @@ export default function Project({ id, title, number, imageSrc, imageOnLeft }: Pr
                 onError={() => setImageError(true)}
                 priority
                 loading="eager"
-                layout="fill" // Zorgt ervoor dat de afbeelding de container vult
+                layout="fill"
               />
             </motion.div>
           )}
@@ -82,9 +82,14 @@ export default function Project({ id, title, number, imageSrc, imageOnLeft }: Pr
   );
 
   return (
-    <div className="bg-white text-black project-container grid grid-cols-2 h-screen w-full overflow-hidden snap-start">
-      {imageOnLeft ? <ImageContent /> : <TextContent />}
-      {imageOnLeft ? <TextContent /> : <ImageContent />}
+    <div className="bg-white text-black project-container flex flex-col md:grid md:grid-cols-2 h-screen w-full overflow-hidden snap-start">
+      <div className="order-1 md:order-none h-[50vh] md:h-full">
+        <TextContent />
+      </div>
+      <div className="order-2 md:order-none h-[50vh] md:h-full">
+        <ImageContent />
+      </div>
     </div>
   );
 }
+
