@@ -21,7 +21,7 @@ This project is a showcase portfolio website built with **React**, **Next.js**, 
 ---
 
 ### Commit: `nieuwe layout`
-- **Description**: Introduced a new layout for the website, including redesigned sections and improved responsiveness.
+- **Description**: Introduced a new layout for the website, including redesigned sections.
 - **Reason**: To align the design with modern trends and ensure a better user experience.
 
 ---
@@ -33,7 +33,7 @@ This project is a showcase portfolio website built with **React**, **Next.js**, 
 ---
 
 ### Commit: `parallax + shrink`
-- **Description**: Added a shrink effect to the parallax scrolling feature for a dynamic user experience.
+- **Description**: Added a shrink effect to the parallax scrolling feature.
 - **Reason**: To enhance the visual appeal and interactivity of the website.
 
 ---
@@ -51,8 +51,8 @@ This project is a showcase portfolio website built with **React**, **Next.js**, 
 ---
 
 ### Commit: `projects hidden`
-- **Description**: Temporarily hid the projects section for further refinement and testing.
-- **Reason**: To focus on improving the layout and ensuring a polished presentation before displaying it to users.
+- **Description**: Made sure that the other porjects arre hidden when viewing one.
+- **Reason**: Improve the experience of the website and opening projects.
 
 ---
 
@@ -64,7 +64,7 @@ This project is a showcase portfolio website built with **React**, **Next.js**, 
 
 ### Commit: `auto scroll back`
 - **Description**: Implemented an auto-scroll-back feature to enhance navigation experience.
-- **Reason**: To improve usability by automatically scrolling users back to the top or a specific section.
+- **Reason**: To improve usability by automatically scrolling users back to the project.
 
 ---
 
@@ -119,18 +119,6 @@ This project is a showcase portfolio website built with **React**, **Next.js**, 
 
 ---
 
-### Commit: `direct fix`
-- **Description**: Made quick fixes to address immediate bugs in the project.
-- **Reason**: To resolve critical issues without delay.
-
----
-
-### Commit: `nieuwe fix`
-- **Description**: Applied additional fixes to improve functionality and design consistency.
-- **Reason**: To refine the project based on recent testing and feedback.
-
----
-
 ### Commit: `projectlist`
 - **Description**: Created a project list component to display projects dynamically.
 - **Reason**: To showcase all projects in a structured and visually appealing way.
@@ -138,7 +126,7 @@ This project is a showcase portfolio website built with **React**, **Next.js**, 
 ---
 
 ### Commit: `description`
-- **Description**: Added descriptions to various sections of the project for better context and clarity.
+- **Description**: Improved the project description and added a linkt element + scroll indicator.
 - **Reason**: To improve the readability and usability of the website.
 
 ---
