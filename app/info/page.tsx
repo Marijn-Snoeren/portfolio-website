@@ -6,7 +6,7 @@ const Info = () => {
       <div className="container mx-auto px-4 sm:px-6 pt-8 lg:px-8 flex flex-col min-h-screen">
         <main className="flex-grow">
           <p className="text-left pt-6 sm:pt-8 md:pt-12 lg:pt-16 text-sm sm:text-base leading-relaxed">
-          Hoi, ik ben [jouw naam] en ik studeer ICT - Media Design aan Fontys Tilburg. Ik ben gepassioneerd door het combineren van technologie en ontwerp om gebruiksvriendelijke en functionele oplossingen te creëren. Tijdens mijn studie ben ik bezig om zowel creatief als technisch te denken, en ik ben altijd bezig met het verbeteren van mijn vaardigheden.
+          Hoi, ik ben Marijn en ik studeer ICT - Media Design aan Fontys Tilburg. Ik ben gepassioneerd door het combineren van technologie en ontwerp om gebruiksvriendelijke en functionele oplossingen te creëren. Tijdens mijn studie ben ik bezig om zowel creatief als technisch te denken, en ik ben altijd bezig met het verbeteren van mijn vaardigheden.
           </p>
           <p className="mt-4 sm:mt-6 text-sm sm:text-base leading-relaxed">
           Ik werk met verschillende tools en technieken, zoals HTML, CSS, JavaScript, Next.js, GSAP, Framer, WordPress, Storyblok, Photoshop, Illustrator en Figma. Ik heb ervaring met het ontwikkelen van websites, het ontwerpen van grafische materialen en het werken aan andere digitale projecten. Mijn focus ligt op het leveren van werk dat niet alleen goed functioneert, maar ook visueel aantrekkelijk en gebruiksvriendelijk is.
