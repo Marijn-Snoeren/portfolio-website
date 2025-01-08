@@ -26,43 +26,19 @@ const projects = [
     description: "Upendo is a data services label focused on simplifying complex data insights for businesses. It provides solutions in five core areas: Configuration: Setting up tools like Google Analytics 4 and Looker Studio. Optimization: Identifying and fixing data issues. Visualization: Creating real-time dashboards from multiple channels. Analysis: Offering detailed reports with expert insights. Training: Equipping teams to handle their own data efficiently.",
     imageSrc: "/upendo-1.png",
     additionalImages: [
-      "/placeholder.svg?height=800&width=600",
-      "/placeholder.svg?height=800&width=600",
-      "/upendo-1.png",
+      "/upendo-2.png",
+      "/upendo-3.png",
+      "/upendo-4.png",
+      "/upendo-6.png",
+      "/upendo-1.png"
     ],
     imageOnLeft: false
   },
   {
     id: "project-three",
-    title: "PROJECT THREE",
+    title: "LEVENSGLOED",
     number: 3,
     description: "Commodo adipisicing culpa velit Lorem sunt ea consequat deserunt excepteur magna officia quis ex. Ad et laboris et exercitation deserunt commodo velit laborum fugiat minim officia ex.",
-    imageSrc: "/placeholder.svg?height=800&width=600",
-    additionalImages: [
-      "/placeholder.svg?height=800&width=600",
-      "/placeholder.svg?height=800&width=600",
-      "/placeholder.svg?height=800&width=600",
-    ],
-    imageOnLeft: true
-  },
-  {
-    id: "project-four",
-    title: "PROJECT FOUR",
-    number: 4,
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    imageSrc: "/placeholder.svg?height=800&width=600",
-    additionalImages: [
-      "/placeholder.svg?height=800&width=600",
-      "/placeholder.svg?height=800&width=600",
-      "/placeholder.svg?height=800&width=600",
-    ],
-    imageOnLeft: false
-  },
-  {
-    id: "project-five",
-    title: "PROJECT FIVE",
-    number: 5,
-    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     imageSrc: "/placeholder.svg?height=800&width=600",
     additionalImages: [
       "/placeholder.svg?height=800&width=600",
