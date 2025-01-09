@@ -18,7 +18,7 @@ const projects = [
     id: "project-three",
     title: "LEVENSGLOED",
     number: 3,
-    imageSrc: "/levensgloed.jpg",
+    imageSrc: "/levensgloed-1.png",
   }
 ];
 

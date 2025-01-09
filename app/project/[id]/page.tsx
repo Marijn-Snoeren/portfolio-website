@@ -37,11 +37,11 @@ const projects = [
     title: "LEVENSGLOED",
     number: 3,
     description: "Commodo adipisicing culpa velit Lorem sunt ea consequat deserunt excepteur magna officia quis ex. Ad et laboris et exercitation deserunt commodo velit laborum fugiat minim officia ex.",
-    imageSrc: "/placeholder.svg?height=800&width=600",
+    imageSrc: "/levensgloed-1.png",
     additionalImages: [
       "/placeholder.svg?height=800&width=600",
       "/placeholder.svg?height=800&width=600",
-      "/placeholder.svg?height=800&width=600",
+      "/levensgloed-1.png",
     ],
   }
 ];
