@@ -42,13 +42,12 @@ Hieronder vind je een overzicht van de versies en iteraties van de website, incl
 ### Versie 1.0
 - Initiële opzet van de website.
 - Basisstructuur opgezet met Create Next App.
-- Responsief design geïmplementeerd voor zowel desktop als mobiel.
 
 ---
 
 ### Versie 1.1
-- Toevoeging van GSAP-animaties voor interactieve elementen.
-- Basisconfiguratie verbeterd, waaronder het toevoegen van `.gitignore` en het oplossen van configuratiefouten.
+- Begonnen met het implementeren van GSAP voor animaties.
+- Ook gegeken naar het gebruik van Framer Motion.
 
 ---
 
@@ -70,34 +69,40 @@ Hieronder vind je een overzicht van de versies en iteraties van de website, incl
 
 ---
 
-### Versie 1.5
-- Nieuwe versie van de homepage ontworpen en kleine bugs opgelost.
-- Responsiviteitsproblemen verholpen op diverse schermformaten.
-
 ---
 
-### Versie 1.6
-- Parallax scrolling verbeterd om visuele glitches te corrigeren.
+### Versie 2.0
+- Nieuwe versie van de homepage ontworpen met v0.
 - Auto-scroll-back feature toegevoegd voor verbeterde navigatie.
 
 ---
 
-### Versie 1.7
+### Versie 2.1
 - Afbeeldingen toegevoegd en bestaande visuele bugs opgelost.
-- Redirects geïmplementeerd voor soepelere navigatie tussen secties.
-
----
-
-### Versie 1.8
-- Interactieve elementen geoptimaliseerd en beschrijvingen geüpdatet.
 - Andere projecten verborgen tijdens het bekijken van één specifiek project.
 
 ---
 
-### Versie 2.0
-- Grote herstructurering van de website, inclusief design- en functionaliteitsupdates.
-- Feedback verwerkt voor verbeterde UX en moderne trends geïntegreerd.
+### Versie 2.2
+- Responsive gemaakt voor mobile devices.
 
+---
+
+### Versie 2.3
+- Gedeployed op Vercel.
+- Aanpassingen gemaakt om deployment errors te verhelpen.
+
+---
+
+### Versie 2.4
+- Mobiele header aangepast zodat hij altijd zichtbaar is.
+- About tekst aangepoast met daadwerkelijker tekst.
+
+---
+
+### Versie 2.5
+- Foto's vande projecten geupdate met actuele foto's.
+- Projectbeschrijvingen aangepast zodat kloppen per project.
 
 ---
 
