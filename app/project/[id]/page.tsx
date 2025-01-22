@@ -36,11 +36,13 @@ const projects = [
     id: "project-three",
     title: "LEVENSGLOED",
     number: 3,
-    description: "Commodo adipisicing culpa velit Lorem sunt ea consequat deserunt excepteur magna officia quis ex. Ad et laboris et exercitation deserunt commodo velit laborum fugiat minim officia ex.",
+    description: "Levensgloed is your trusted partner in holistic health and well-being. Offering a range of care services, insightful resources, and community support, our platform empowers individuals on their journey to a balanced and fulfilling life. With a focus on clarity and compassion, we ensure an accessible user experience, providing real-time updates, social engagement opportunities, and a wealth of knowledge for those seeking to live with vitality and purpose.",
     imageSrc: "/levensgloed-1.png",
     additionalImages: [
-      "/placeholder.svg?height=800&width=600",
-      "/placeholder.svg?height=800&width=600",
+      "/lg-2.png",
+      "/lg-5.png",
+      "/lg-3.png",
+      "/lg-4.png",
       "/levensgloed-1.png",
     ],
   }
